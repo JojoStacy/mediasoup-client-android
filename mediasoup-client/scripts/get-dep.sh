@@ -74,7 +74,7 @@ function get_abseil-cpp()
 function get_webrtc-libs()
 {
     GIT_REPO="https://github.com/haiyangwu/webrtc-android-build.git"
-	GIT_TAG="m74"
+	GIT_TAG="m79"
 	DEST="deps/webrtc/lib"
 
 	get_dep "${GIT_REPO}" "${GIT_TAG}" "${DEST}"
