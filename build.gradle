@@ -2,12 +2,17 @@
 
 buildscript {
     repositories {
+            maven {
+            url 'http://192.168.3.242:18081/artifactory/android'
+//            allowInsecureProtocol = true
+        }
         google()
         mavenCentral()
         jcenter()
 
     }
     dependencies {
+    
         classpath 'com.android.tools.build:gradle:3.4.1'
         classpath 'com.novoda:bintray-release:0.9.2'
 
@@ -18,6 +23,10 @@ buildscript {
 
 allprojects {
     repositories {
+            maven {
+            url 'http://192.168.3.242:18081/artifactory/android'
+//            allowInsecureProtocol = true
+        }
         google()
         mavenCentral()
         jcenter()
