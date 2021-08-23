@@ -1,18 +1,32 @@
 # mediasoup-client-android
 
-[![Bintray][bintray-shield-mediasoup-client-android]][bintray-mediasoup-client-android]
-[![Codacy Badge][codacy-grade-shield-mediasoup-client-android]][codacy-grade-mediasoup-client-android]
+[![](https://jitpack.io/v/chenjim/mediasoup-client-android.svg)](https://jitpack.io/#chenjim/mediasoup-client-android)
 
 mediasoup android client side library https://mediasoup.org
 
 ## Getting Started
 
+#### How Build
+1. execute `./mediasoup-client/get_all_deps.sh` get dependency c++ libs   
+   for more [get_all_deps.sh](https://github.com/chenjim/mediasoup-client-android/blob/dev/mediasoup-client/scripts/get-dep.sh)
+2. open by `Android Studio` or execute `gradlew` build project  
+
 ### Setting up the dependency
 
-Include `mediasoup-client-android`  into your project, for example, as a Gradle compile dependency:
-
+Include `mediasoup-client-android`  into your project, for example:  
+Add it in your root build.gradle at the end of repositories:  
 ```groovy
-implementation 'org.mediasoup.droid:mediasoup-client:3.0.8-beta-3'
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+Add the dependency
+```groovy
+//implementation 'org.mediasoup.droid:mediasoup-client:3.0.8-beta-3'
+implementation 'com.github.chenjim:mediasoup-client-android:3.0.8-beta-4'
 ```
 ### Example
 
