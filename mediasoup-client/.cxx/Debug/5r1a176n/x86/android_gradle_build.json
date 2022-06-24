@@ -1,0 +1,52 @@
+{
+  "buildFiles": [
+    "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/CMakeLists.txt",
+    "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/deps/libmediasoupclient/CMakeLists.txt",
+    "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/deps/libmediasoupclient/deps/libsdptransform/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/george/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/.cxx/Debug/5r1a176n/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/george/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/.cxx/Debug/5r1a176n/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "mediasoupclient::@753da292718239339a85": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "mediasoupclient",
+      "output": "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/.cxx/Debug/5r1a176n/x86/deps/libmediasoupclient/libmediasoupclient.a"
+    },
+    "mediasoupclient_so::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "mediasoupclient_so",
+      "output": "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/build/intermediates/cxx/Debug/5r1a176n/obj/x86/libmediasoupclient_so.so",
+      "runtimeFiles": []
+    },
+    "sdptransform::@3b56f022bbc46e10eaf5": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "sdptransform",
+      "output": "/Users/george/AndroidProjects/mediasoup-client-android/mediasoup-client/.cxx/Debug/5r1a176n/x86/deps/libmediasoupclient/libsdptransform/libsdptransform.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/george/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+      "cppCompilerExecutable": "/Users/george/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
