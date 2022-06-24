@@ -70,13 +70,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId = 'org.mediasoup.droid'
-            artifactId = 'mediasoup-client'
-            version = '3.0.9-beta-3'
+
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'org.mediasoup.droid'
+                artifactId = 'mediasoup-client'
+                version = '3.0.9-beta-3'
+            }
         }
     }
 }
-
