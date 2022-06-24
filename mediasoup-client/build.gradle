@@ -80,7 +80,7 @@ afterEvaluate {
 
                 groupId = 'org.mediasoup.droid'
                 artifactId = 'mediasoup-client'
-                version = '3.0.9-beta-3'
+                version = '3.0.9-beta-1'
             }
         }
     }
